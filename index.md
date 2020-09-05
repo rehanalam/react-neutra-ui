@@ -15,7 +15,9 @@ npm install react-neutra-ui
 Import React components from the appropriate package.
 ```markdown
 import { Button } from "@react-neutra-ui";
- <Button fill="primary" text="button content" onClick={incrementCounter} />````
+...
+<Button fill="primary" text="button content" onClick={incrementCounter} />
+ ```
 ```markdown
 
 Syntax highlighted code block
