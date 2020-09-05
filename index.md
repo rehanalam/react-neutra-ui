@@ -1,14 +1,23 @@
-## Welcome to GitHub Pages
+## NEUTRA - ReactJs Tool kit
+The NEUTRA Design System is a series of individual styles and components, that when combined make beautiful, intuitive designs. These designs are systemic and logical, as they all follow the same universal principles.
 
-You can use the [editor on GitHub](https://github.com/rehanalam/react-neutra-ui/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The Neutra Design System is comprised of:
+- Neutra Style Guide
+- Neutra component library, which contains ReactJs reuseable components.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+### Install
+Install package using npm
 ```markdown
+npm install react-neutra-ui
+````
+
+### Import
+Import React components from the appropriate package.
+```markdown
+import { Button } from "@react-neutra-ui";
+ <Button fill="primary" text="button content" onClick={incrementCounter} />````
+```markdown
+
 Syntax highlighted code block
 
 # Header 1
