@@ -44,27 +44,22 @@ Following are the HTML props which will pass down to child button element.
 | `icon` | *optional* - **`ReactNode`** <br> Icon element which renders before button text |
 | `type` | *optional* -  **`submit`** **`reset`** **`button`** <br> HTML `type` attribute of button |
 
+# Form Controls
 
-## Header 2
-### Header 3
+## Toggle Switch
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```mardown
+<ToggleSwitch label="Switch"
+			  checked={true}
+			  onChange={(e) =>  alert(`Toggle Status: ${{e.target.checked}}`)}/>
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rehanalam/react-neutra-ui/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+| Props | Description  |
+|--|--|
+| `label` | *optional* - **`string`** <br> Toggle switch label |
+| `checked` | **`boolean`** <br> Checked value checkbox  |
+| `onClick` | *optional* - **`ChangeEvent<HTMLInputElement>`** <br> Event handler invoked when input value is changed.|
+| `id` | *optional* - **`string`** <br> ID to pass along to a child element |
+| `className` | *optional* - **`string`** <br> A space-delimited list of class names to pass along to a child element. |
+| `style` | *optional* - **`React.CSSProperties`** <br> Inline CSS styles |
+| `disabled` | *optional* - **`boolean`** <br> Disables input when value is true |
