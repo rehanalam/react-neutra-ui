@@ -21,8 +21,30 @@ import { Button } from "@react-neutra-ui";
 ```markdown
 
 Syntax highlighted code block
+````
 
-# Header 1
+# Button
+
+```mardown
+<Button text="Add Manually"
+        fill="primary"
+        onClick={() => { }}/>
+```
+
+Following are the HTML props which will pass down to child button element.
+```markdown
+| Props | Description  |
+|--|--|
+| `id` | *optional* - **`string`** <br> ID to pass along to a child element |
+| `className` | *optional* - **`string`** <br> A space-delimited list of class names to pass along to a child element. |
+| `text` | *optional* - **`string`** <br> Action button text |
+| `fill` | **`transparent`** \| **`default`** \| **`primary`** \| **`secondary`** \| **`tertiary`** \| **`danger`** \| **`link`** <br>  Color variants of button |
+| `onClick` | *optional* - **`React.MouseEvent<HTMLButtonElement>`** <br> Click event handler.|
+| `style` | *optional* - **`React.CSSProperties`** <br> Inline CSS styles |
+| `icon` | *optional* - **`ReactNode`** <br> Icon element which renders before button text |
+| `type` | *optional* -  **`submit`** **`reset`** **`button`** <br> HTML `type` attribute of button |
+```
+
 ## Header 2
 ### Header 3
 
