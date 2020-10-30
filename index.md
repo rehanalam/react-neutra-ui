@@ -25,7 +25,7 @@ Syntax highlighted code block
 
 # Button
 
-```mardown
+```markdown
 <Button text="Add Manually"
         fill="primary"
         onClick={() => { }}/>
@@ -48,7 +48,7 @@ Following are the HTML props which will pass down to child button element.
 
 ## Toggle Switch
 
-```mardown
+```markdown
 <ToggleSwitch label="Switch"
 			  checked={true}
 			  onChange={(e) =>  alert(`Toggle Status: ${{e.target.checked}}`)}/>
