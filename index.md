@@ -32,7 +32,7 @@ Syntax highlighted code block
 ```
 
 Following are the HTML props which will pass down to child button element.
-```markdown
+
 | Props | Description  |
 |--|--|
 | `id` | *optional* - **`string`** <br> ID to pass along to a child element |
@@ -43,7 +43,7 @@ Following are the HTML props which will pass down to child button element.
 | `style` | *optional* - **`React.CSSProperties`** <br> Inline CSS styles |
 | `icon` | *optional* - **`ReactNode`** <br> Icon element which renders before button text |
 | `type` | *optional* -  **`submit`** **`reset`** **`button`** <br> HTML `type` attribute of button |
-```
+
 
 ## Header 2
 ### Header 3
