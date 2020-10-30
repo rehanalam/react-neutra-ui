@@ -105,22 +105,6 @@ Following are the HTML props which will pass down to child button element.
 | `onClick` | *optional* - **`React.ChangeEvent<HTMLInputElement>`** <br> Event handler invoked when input value is changed.|
 | `id` | *optional* - **`string`** <br> ID to pass along to a child element |
 
-<br>
-<br>
-
-## Radio Group
-```markdown
-<RadioGroup name="meal_choices" options={options} selectedOption='soup' onChange={(e) => onRadioGroupChange(e)} />
-```
-
-| Props | Description  |
-|--|--|
-| `options` | **`RadioGroupOption[]`** <br> Array of options to render in the group. |
-| `selectedOption` | *optional* - **`string`** **`number`** <br> Value of the selected radio. . |
-| `name` | **`string`** <br> Name of the group, used to link radio buttons together in HTML.  |
-| `onClick` | *optional* - **`React.ChangeEvent<HTMLInputElement>`** <br> Event handler invoked when input value is changed.|
-| `id` | *optional* - **`string`** <br> ID to pass along to a child element |
-
 
 ### RadioGroupOption
 
