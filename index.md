@@ -16,7 +16,7 @@ Import React components from the appropriate package.
 ```markdown
 import { Button } from "@react-neutra-ui";
 ...
-<Button fill="primary" text="button content" onClick={incrementCounter} />
+<Button fill="primary" text="button content" onClick={e => onChange(e)} />
  ```
 ```markdown
 
@@ -26,9 +26,7 @@ Syntax highlighted code block
 # Button
 
 ```markdown
-<Button text="Add Manually"
-        fill="primary"
-        onClick={() => { }}/>
+<Button text="Add Manually" fill="primary" onClick={() => { }}/>
  ```
 
 Following are the HTML props which will pass down to child button element.
@@ -44,14 +42,16 @@ Following are the HTML props which will pass down to child button element.
 | `icon` | *optional* - **`ReactNode`** <br> Icon element which renders before button text |
 | `type` | *optional* -  **`submit`** **`reset`** **`button`** <br> HTML `type` attribute of button |
 
+<br>
+<br>
+<br>
+
 # Form Controls
 
 ## Toggle Switch
 
 ```markdown
-<ToggleSwitch label="Switch"
-			  checked={true}
-			  onChange={(e) =>  alert(`Toggle Status: ${{e.target.checked}}`)}/>
+<ToggleSwitch label="Switch" checked={true} onChange={(e) =>  onChange(e)}/>
  ```
 
 | Props | Description  |
@@ -64,7 +64,8 @@ Following are the HTML props which will pass down to child button element.
 | `style` | *optional* - **`React.CSSProperties`** <br> Inline CSS styles |
 | `disabled` | *optional* - **`boolean`** <br> Disables input when value is true |
 
-
+<br>
+<br>
 
 ## Radio Button
 ```markdown
@@ -72,7 +73,7 @@ Following are the HTML props which will pass down to child button element.
 	     label="soup"
 	     name="meal_choices"
 	     value="1"
-	     onChange={onChange}/>
+	     onChange={onChange(e)}/>
 ```
 
 | Props | Description  |
@@ -88,22 +89,8 @@ Following are the HTML props which will pass down to child button element.
 | `disabled` | *optional* - **`boolean`** <br> Disables input when value is true |
 | `defaultChecked` | *optional* - **`boolean`** <br> use in ReactJs to set default value of radion buton group |
 
-
-
-## Radio Group
-```markdown
-<RadioGroup name="meal_choices" options={options} selectedOption='soup' onChange={(e) => onRadioGroupChange(e)} />
-```
-
-| Props | Description  |
-|--|--|
-| `options` | **`RadioGroupOption[]`** <br> Array of options to render in the group. |
-| `selectedOption` | *optional* - **`string`** **`number`** <br> Value of the selected radio. . |
-| `name` | **`string`** <br> Name of the group, used to link radio buttons together in HTML.  |
-| `onClick` | *optional* - **`React.ChangeEvent<HTMLInputElement>`** <br> Event handler invoked when input value is changed.|
-| `id` | *optional* - **`string`** <br> ID to pass along to a child element |
-
-
+<br>
+<br>
 
 ## Radio Group
 ```markdown
@@ -120,6 +107,20 @@ Following are the HTML props which will pass down to child button element.
 
 <br>
 <br>
+
+## Radio Group
+```markdown
+<RadioGroup name="meal_choices" options={options} selectedOption='soup' onChange={(e) => onRadioGroupChange(e)} />
+```
+
+| Props | Description  |
+|--|--|
+| `options` | **`RadioGroupOption[]`** <br> Array of options to render in the group. |
+| `selectedOption` | *optional* - **`string`** **`number`** <br> Value of the selected radio. . |
+| `name` | **`string`** <br> Name of the group, used to link radio buttons together in HTML.  |
+| `onClick` | *optional* - **`React.ChangeEvent<HTMLInputElement>`** <br> Event handler invoked when input value is changed.|
+| `id` | *optional* - **`string`** <br> ID to pass along to a child element |
+
 
 ### RadioGroupOption
 
