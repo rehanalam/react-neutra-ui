@@ -21,7 +21,7 @@ import { Button } from "@react-neutra-ui";
 ```markdown
 
 Syntax highlighted code block
-````
+ ````
 
 # Button
 
@@ -29,7 +29,7 @@ Syntax highlighted code block
 <Button text="Add Manually"
         fill="primary"
         onClick={() => { }}/>
-```
+ ```
 
 Following are the HTML props which will pass down to child button element.
 
@@ -52,7 +52,7 @@ Following are the HTML props which will pass down to child button element.
 <ToggleSwitch label="Switch"
 			  checked={true}
 			  onChange={(e) =>  alert(`Toggle Status: ${{e.target.checked}}`)}/>
-```
+ ```
 
 | Props | Description  |
 |--|--|
