@@ -63,3 +63,29 @@ Following are the HTML props which will pass down to child button element.
 | `className` | *optional* - **`string`** <br> A space-delimited list of class names to pass along to a child element. |
 | `style` | *optional* - **`React.CSSProperties`** <br> Inline CSS styles |
 | `disabled` | *optional* - **`boolean`** <br> Disables input when value is true |
+
+
+
+## Radio Button
+```markdown
+<RadioButton id="radio-btn-soup"
+	     label="soup"
+	     name="meal_choices"
+	     value="1"
+	     onChange={onChange}/>
+```
+
+| Props | Description  |
+|--|--|
+| `label` | *optional* - **`string`** <br> Toggle switch label |
+| `checked` | *optional* - **`boolean`** <br> It indicates whether or not this radio button is the currently-selected item in the group. |
+| `value` | **`string`** <br> The string to use as the value of the radio when submitting the form, if the radio is currently toggled on. |
+| `name` | **`string`** <br> Name of the group, used to link radio buttons together in HTML.  |
+| `onClick` | *optional* - **`React.ChangeEvent<HTMLInputElement>`** <br> Event handler invoked when input value is changed.|
+| `id` | *optional* - **`string`** <br> ID to pass along to a child element |
+| `className` | *optional* - **`string`** <br> A space-delimited list of class names to pass along to a child element. |
+| `style` | *optional* - **`React.CSSProperties`** <br> Inline CSS styles |
+| `disabled` | *optional* - **`boolean`** <br> Disables input when value is true |
+| `defaultChecked` | *optional* - **`boolean`** <br> use in ReactJs to set default value of radion buton group |
+
+
